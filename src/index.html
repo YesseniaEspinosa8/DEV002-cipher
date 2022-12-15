@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<header>
+  <h1>Cifrado Cesar</h1>
+
+  <p>Codifica y Decodifica tus mensajes</p>
+  <p>Instrucciones</p>
+
+</header>
+
+<main id="root">
+  <form>
+    <label for="mensaje">1.Ingresa el texto que quieres cifrar</label><br />
+    <br>
+    <textarea name="cuadro mensaje" id="cuadro mensaje" cols="30" rows="10"
+      placeholder="Ingresa tu mensaje secreto aqui"></textarea>
+
+    <br>
+
+    <label for="mensaje">2.Ingresa la cantidad de letras a desplazar</label><br />
+    <textarea name="cuadro mensaje" id="cuadro mensaje" cols="5" rows="2"></textarea>
+
+    <br>
+
+    <label for="mensaje">3.Seleccione en cifrar o desifrar segùn se requiera</label><br />
+    <br>
+
+    <input type="button" id="cifrar" value="Cifrar"> <input type="button" id="decifrar" value="Decifrar">
+    <br>
+    <br>
+
+    <label for="mensaje">4.!Disfruta tu mensaje!</label><br />
+    <br>
+    <textarea name="cuadro mensaje" id="cuadro mensaje" cols="30" rows="10"></textarea>
+
+  </form>
+</main>
+
+<script src="index.js" type="module"></script>
+
 </html>
