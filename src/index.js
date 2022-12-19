@@ -1,4 +1,5 @@
 import cipher from './cipher.js';
+console.log(cipher)
 // Obtener el elemento imput (clave)
 let key = document.getElementById("key");
 // Obtener el elemento textarea
