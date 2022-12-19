@@ -8,3 +8,8 @@ es reemplazada por otra que se encuentra un número fijo de posiciones
 
 El presente proyecto se creo con la finalidad de cifrar y decifrar un texto indicando un desplazamiento especifico de caracteres (_offset_).
 
+## 3. Diseño del proyecto
+Este proyecto tiene un diseño sencillo, el principal objetivo es la funcionalidad de este.
+
+[![Dise-o-figma-cipher.jpg](https://i.postimg.cc/NMp42zfJ/Dise-o-figma-cipher.jpg)](https://postimg.cc/mz1M0V9C)
+
