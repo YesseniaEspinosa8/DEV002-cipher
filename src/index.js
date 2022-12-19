@@ -1,16 +1,23 @@
 import cipher from './cipher.js';
-console.log(cipher)
-// Obtener el elemento imput (clave)
-let key = document.getElementById("key");
-// Obtener el elemento textarea
-let textUser = document.getElementById("TextToEncrypt");
-// Agregar escuchador al textarea
-textUser.addEventListener("keydown", checkChar);
-// Obetner el elemento p (resultado)
-let containerTxtResult = document.getElementById("result");
-
-// Obtener el elemento button ENCRYPT
-let btnEncrypt= document.getElementById ("btnEncrypt");
 
 
-console.log(cipher);
+let formEncriptar  = document.getElementById("cifrar");
+formEncriptar.addEventListener("click",(e)=> {
+    e.preventDefault();
+    const offset = document.getElementById("offset").value 
+    const mensaje = document.getElementById("mensaje").value
+    const textEncode= cipher.encode(offset,mensaje)
+    console.log(textEncode);
+}) 
+
+let formDesencriptar = document.getElementById("decifrar");
+formDesencriptar.addEventListener("click", (e)=> {
+    e.preventDefault();
+    const offset = document.getElementById("offset").value
+    const mensaje = document.getElementById("mensaje").value
+    const textDecode = cipher.decode(offset,mensaje)
+    console.log(textDecode);
+})
+
+
+

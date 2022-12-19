@@ -1,7 +1,7 @@
 const cipher = {
   encode: function (offset, string) {
     console.log(typeof offset)
-    if (typeof offset !== "number" || typeof string !== "string") {
+    if (typeof offset !== "string" || typeof string !== "string") {
       throw new TypeError();
     }
     let textEncode = "";
@@ -9,7 +9,7 @@ const cipher = {
       let cifrar = string.charCodeAt(index);
       let decifrar;
       if (cifrar < 65 || cifrar > 90) {
-        decifrar = String.fromChardCode(cifrar);
+        decifrar = String.fromCharCode(cifrar);
         textEncode += decifrar;
 
       } else {
@@ -24,7 +24,7 @@ const cipher = {
 
   decode: function (offset, string) {
     console.log(typeof offset)
-    if (typeof offset !== "number" || typeof string !== "string") {
+    if (typeof offset !== "string" || typeof string !== "string") {
       throw new TypeError();
     }
     let textDecode = "";
