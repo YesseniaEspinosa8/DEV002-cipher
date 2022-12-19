@@ -6,6 +6,5 @@ es reemplazada por otra que se encuentra un número fijo de posiciones
 
 ## 2. Resumen del proyecto
 
-En este proyecto crearás una aplicación web que servirá para que el usuario
-pueda cifrar y descifrar un texto indicando un desplazamiento específico de
-caracteres (_offset_).
+El presente proyecto se creo con la finalidad de cifrar y decifrar un texto indicando un desplazamiento especifico de caracteres (_offset_).
+
