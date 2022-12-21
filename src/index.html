@@ -7,42 +7,46 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<header>
-  <h1>Cifrado Cesar</h1>
+<body>
 
-  <p>Codifica y Decodifica tus mensajes</p>
-  <p>Instrucciones</p>
 
-</header>
+  <header>
+    <h1>Cifrado Cesar</h1>
 
-<main id="root">
-  <form>
-    <label for="mensaje">1.Ingresa el texto que quieres cifrar</label><br />
-    <br>
-    <textarea name="cuadro mensaje" id="mensaje" cols="30" rows="10"
-      placeholder="Ingresa tu mensaje secreto aqui"></textarea>
+    <p>Codifica y Decodifica tus mensajes</p>
+    <p>Instrucciones</p>
 
-    <br>
+  </header>
 
-    <label for="mensaje">2.Ingresa el no. de desplazamientos</label><br />
-    <input type="number" name="cuadro mensaje" id="offset">
+  <main id="root">
+    <form>
+      <label for="mensaje">1.Ingresa el texto que quieres cifrar</label><br />
+      <br>
+      <textarea name="cuadro mensaje" id="mensaje" cols="30" rows="10"
+        placeholder="Ingresa tu mensaje secreto aqui"></textarea>
 
-    <br>
+      <br>
 
-    <label for="mensaje">3.Seleccione en cifrar o desifrar segùn se requiera</label><br />
-    <br>
+      <label for="mensaje">2.Ingresa el no. de desplazamientos</label><br />
+      <input type="number" name="cuadro mensaje" id="offset">
 
-    <input type="button" id="cifrar" value="Cifrar"> <input type="button" id="decifrar" value="Decifrar">
-    <br>
-    <br>
+      <br>
 
-    <label for="mensaje">4.!Disfruta tu mensaje!</label><br />
-    <br>
-    <textarea name="cuadro mensaje" id="cuadro mensaje" cols="30" rows="10"></textarea>
+      <label for="mensaje">3.Seleccione en cifrar o desifrar segùn se requiera</label><br />
+      <br>
 
-  </form>
-</main>
+      <input type="button" id="cifrar" value="Cifrar"> <input type="button" id="decifrar" value="Decifrar">
+      <br>
+      <br>
 
-<script src="index.js" type="module"></script>
+      <label for="mensaje">4.!Disfruta tu mensaje!</label><br />
+      <br>
+      <textarea name="cuadro mensaje" id="mensaje2" cols="30" rows="10"></textarea>
+
+    </form>
+  </main>
+
+  <script src="index.js" type="module"></script>
+</body>
 
 </html>

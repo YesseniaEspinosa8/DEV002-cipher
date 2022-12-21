@@ -1,8 +1,9 @@
 const cipher = {
   encode: function (offset, string) {
+    console.log(offset)
     console.log(typeof offset)
-    if (typeof offset !== "string" || typeof string !== "string") {
-      throw new TypeError();
+    if (typeof offset !== "number" || typeof string !== "string") {
+      throw new TypeError("error de parámetros");
     }
     let textEncode = "";
     for (let index = 0; index < string.length; index++) {
@@ -24,15 +25,15 @@ const cipher = {
 
   decode: function (offset, string) {
     console.log(typeof offset)
-    if (typeof offset !== "string" || typeof string !== "string") {
+    if (typeof offset !== "number" || typeof string !== "string") {
       throw new TypeError();
     }
     let textDecode = "";
     for (let index = 0; index < string.length; index++) {
-      let cifrar= string.charCodeAt(index);
+      let cifrar = string.charCodeAt(index);
       let decifrar;
       if (cifrar < 65 || cifrar > 90) {
-        decifrar= String.fromCharCode(cifrar);
+        decifrar = String.fromCharCode(cifrar);
         textDecode += decifrar;
 
       } else {
